@@ -1,0 +1,34 @@
+# Ignore WordPress core files
+wp-config.php
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+!wp-content/uploads/
+
+# Ignore WordPress default themes
+wp-content/themes/twenty*/
+
+# Ignore WordPress plugin files
+wp-content/plugins/*
+!wp-content/plugins/index.php
+
+# Ignore cache and log files
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/debug.log
+wp-content/upgrade.log
+
+# Ignore miscellaneous files
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.swp
+.DS_Store
+Thumbs.db
