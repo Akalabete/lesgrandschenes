@@ -12,6 +12,22 @@ function theme_enqueue_styles(){
     add_menu_page(__('Paramètres du thème Les grands chênes', 'lesgrandschenes'), __('lesgrandschenes', 'lesgrandschenes'), 'manage_options', 'lesgrandschenes-settings', 'lesgrandschenes_theme_settings', 'dashicons-admin-settings', 60); 
   }
 
+  function set_samesite_cookie($content) {
+    // Assurez-vous que le contenu est une chaîne de caractères
+    if (is_string($content)) {
+        // Vérifiez si 'SameSite=None; Secure' n'est pas déjà présent et si l'utilisateur est connecté
+        if (strpos($content, 'SameSite=None; Secure') === false && is_user_logged_in()) {
+            $content = str_replace('path=/;', 'path=/; SameSite=None; Secure;', $content);
+        }
+    }
+  
+    return $content;
+  }
+  
+  // Ajoutez le filtre uniquement si l'utilisateur est connecté
+  if (is_user_logged_in()) {
+    add_filter('wp_headers', 'set_samesite_cookie', 10, 1);
+  }
   function lesgrandschenes_theme_settings() {
     echo '<h1>'.esc_html( get_admin_page_title() ).'</h1>';
     echo '<form action="options.php" method="post" name="lesgrandschenes_settings">';
