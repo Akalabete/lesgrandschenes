@@ -122,7 +122,7 @@
         </div>
     </section>
     <section class="topic magic-section">
-        <h2 class="testimonial">Livre d'or</h2>
+        <h2 id="testimonial" class="testimonial">Livre d'or</h2>
         <div id="testimonials-container" class="testimonials-container"></div>
         <div class="slider-buttons">
             <button id="prevButton">Précédent</button>

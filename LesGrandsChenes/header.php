@@ -16,6 +16,9 @@
     <link rel=stylesheet href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.css">
     <link rel="preload" as="image" href="<?php echo get_template_directory_uri(); ?>/assets/images/medium/coverpicmedium.webp" media="(min-width: 768px)">
     <link rel="preload" as="image" href="<?php echo get_template_directory_uri(); ?>/assets/images/small/coverpicsmall.webp" media="(max-width: 767px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
     <script type=application/ld+json>
         [
           {
@@ -232,7 +235,7 @@
 
    
     <section>
-        <h2 id="reservation">Tarifs 2024 et réservations</h2>
+        <h2>Tarifs 2024 et réservations</h2>
         <table class="pricing-table">
             <thead>
                 <tr>
@@ -296,8 +299,8 @@
                 <li class="nav-item"><a href="#descriptif" class="nav-link"><?php _e('Présentation', 'lesgrandschenes'); ?></a></li>
                 <li class="nav-item"><a href="#situation" class="nav-link"><?php _e('Localisation', 'lesgrandschenes'); ?></a></li>
                 <li class="nav-item"><a href="#equipments" class="nav-link"><?php _e('Equipements', 'lesgrandschenes'); ?></a></li>
-                <li class="nav-item"><a href="#testimonial" class="nav-link"><?php _e('Testimonial', 'lesgrandschenes'); ?></a></li>
-                <li class="nav-item"><a href="#reservation" class="nav-link"><?php _e('Reservation', 'lesgrandschenes'); ?></a></li>
+                <li class="nav-item"><a href="#testimonial" class="nav-link nav-link-magic"><?php _e('Testimonial', 'lesgrandschenes'); ?></a></li>
+                <li class="nav-item"><a href="#reservation" class="nav-link nav-link-magic"><?php _e('Reservation', 'lesgrandschenes'); ?></a></li>
                 </ul>
             </div>
             <p class="lesgrandschenes"><?php _e('LES GRANDS CHÊNES', 'lesgrandschenes'); ?></p>

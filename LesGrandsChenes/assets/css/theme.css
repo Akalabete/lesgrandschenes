@@ -155,6 +155,7 @@ h3 {
 }
 
 .activities {
+    font-family: 'Noto Color Emoji', sans-serif;
     font-weight: bold;
 }
 
@@ -508,7 +509,7 @@ h3 {
     #nextButton, #prevButton, #nextButtonHeader, #prevButtonHeader {
         margin: 0 auto;
     }
-    .magic-section {
+    .magic-section, .nav-link-magic {
         display: none;
     }
     .testimonial-photo{
